@@ -1,0 +1,335 @@
+:root{
+    --btnColor:#8e7754;
+    --fontColor:#fff;
+    --secFontColor:#3c3c3c;
+    --trdFontColor:#686868;
+    --bgColor:#ffffff;
+    --secBgColor:#f8f8f8;
+    --contactBgColor:#403d38;
+    --footerBgColor:#353330;
+    --lastBgFooterColor:#353330;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* ========== About ========== */
+
+#About{
+    padding: 5rem 0rem;
+}
+
+/* image side */
+
+.imageOne img{
+    width: 100%;
+    border-radius: 2px;
+}
+
+/* Info side */
+
+#About .Info{
+    padding: 2rem;
+}
+
+.Info h2{
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.Info > p{
+    color: var(--trdFontColor);
+    margin-bottom: 2rem;
+}
+
+.Info .icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1.4rem;
+}
+
+.Info .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 1rem;
+    border: 1px solid var(--trdFontColor);
+    border-radius: 50%;
+    color: var(--btnColor);
+    margin-right: .4rem;
+    font-size: 1.3rem;
+}
+
+.Info .icons p{
+    color: var(--trdFontColor);
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* ========== Our location ========== */
+
+#ourLocation{
+    background-color: var(--secBgColor);
+    padding: 5rem 0rem;
+}
+
+#ourLocation .info{
+    padding: 4.55rem 1rem;
+}
+
+.Info h2{
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#ourLocation .Info > p{
+    color: var(--trdFontColor);
+    margin-bottom: 2rem;
+}
+
+/*  image side */
+
+.imageTwo img{
+    width: 100%;
+    border-radius: 2px;
+}
+
+/* ========== Our Baking ========== */
+
+#ourBaking{
+    padding: 5rem 0rem;
+}
+
+/* info */
+
+#ourBaking .info{
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+#ourBaking .info h2{
+    margin: 1rem 0;
+}
+
+#ourBaking .info p{
+    margin: 0;
+}
+
+/* boxes */
+
+.item .imagethree{
+    margin-bottom: 1.5rem;
+}
+
+.imagethree img{
+    width: 100%;
+}
+
+.item .infos{
+    text-align: center;
+}
+
+.infos p{
+    line-height: 1.7rem;
+    color: var(--trdFontColor);
+}
+
+/* ========== Contact ========== */
+
+#Contact{
+    background-color: var(--secBgColor);
+    padding: 5rem 0rem;
+}
+
+/* info side */
+
+#Contact .info h3{
+    margin-bottom: 2rem;
+}
+
+#Contact .info h6{
+    margin-bottom: 1.5rem;
+}
+
+#Contact .info .icons{
+    margin-bottom: 1rem;
+}
+
+
+#Contact .info .icons .Contact-icon{
+    padding: .3rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.info .icons .Contact-icon i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: .5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 1rem;
+    background-color: var(--btnColor);
+    border-radius: 50%;
+    color: var(--bgColor);
+    font-size: 1.1rem;
+}
+
+
+/* ========== informations ========== */
+
+
+
+
+
+/* ========== footer ========== */
+
+#footer{
+    background-color: var(--lastBgFooterColor);
+    padding: 3rem 0rem;
+}
+
+#footer .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+#footer .row .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#footer .row p{
+    margin: 2rem 0rem;
+    color: var(--trdFontColor);
+}
+
+.social .social-icon{
+    background-color: var(--secFontColor);
+    margin-right: .5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    transition: all 500ms;
+    cursor: pointer;
+}
+
+.social .social-icon:last-child{
+    margin-right: 0rem;
+}
+
+
+.social .social-icon a{
+    text-decoration: none;
+    color: var(--trdFontColor);
+    transition: color 500ms;
+}
+
+/* facebook */
+.social .social-icon:first-child:hover{
+    background-color: #0275d8 ;
+}
+
+.social .social-icon:first-child:hover a{
+    color: #fff;
+}
+
+/* twitter */
+.social .social-icon:nth-child(2):hover{
+    background-color: #0275d8 ;
+}
+
+.social .social-icon:nth-child(2):hover a{
+    color: #fff;
+}
+
+/* linkedin */
+.social .social-icon:nth-child(3):hover{
+    background-color: #0275d8 ;
+}
+
+.social .social-icon:nth-child(3):hover a{
+    color: #fff;
+}
+
+/* google+ */
+.social .social-icon:nth-child(4):hover{
+    background-color: #fc1c1c ;
+}
+
+.social .social-icon:nth-child(4):hover a{
+    color: #fff;
+}
+
+
+@media screen and (max-width:390px) {
+    .Info .icons p {
+        font-size: 1rem;
+    }
+    #footer .row img{
+        margin: 0;
+        width: 98%;
+    }
+    #footer .row p{
+        font-size: .7rem;
+    }
+    #footer .row .social{
+        margin: 0;
+    }
+
+    .social .social-icon{
+        width: 1.3rem;
+        height: 1.3rem;
+        padding: 1rem;
+        font-size: .8rem;
+
+    }
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -181,15 +181,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--trdFontColor);
     position: fixed;
     bottom: 3rem;
     right: 2rem;
     z-index: 500;
     font-size: 1.1rem;
+    cursor: pointer;
 }
 
-
+.up a,.up a:hover{
+    text-decoration: none;
+    color: var(--trdFontColor);
+}
 
 /* ========== Home ========== */
 

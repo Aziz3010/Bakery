@@ -97,7 +97,7 @@ body{
 .sitting-box{
     background-color: var(--secBgColor);
     width: 2.5rem;
-    height: 6rem;
+    height: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,38 +110,16 @@ body{
     cursor: pointer;
 }
 
-.sitting-box .sitting-icon a,
 .sitting-box .cart-icon a{
     text-decoration: none;
     color: var(--trdFontColor);
     cursor: pointer;
 }
 
-.sitting-box .sitting-icon a:hover,
 .sitting-box .cart-icon a:hover{
     color: #09c;
 }
 
-.sitting-box .sitting-icon{
-    border-bottom: 1px solid var(--trdFontColor);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50%;
-    border-radius: 3px 0px 0px 0px;
-}
-
-.sitting-box .sitting-icon::after{
-    content: "See Demo Sites";
-    background-color: var(--secBgColor);
-    color: var(--trdFontColor);
-    position: absolute;
-    left: -114px;
-    padding: .3rem;
-    border-radius: 5px;
-    display: none;
-}
 
 .sitting-box .cart-icon{
     display: flex;
@@ -161,10 +139,6 @@ body{
     padding: .3rem;
     border-radius: 5px;
     display: none;
-}
-
-.sitting-icon:hover.sitting-icon::after{
-    display: flex;
 }
 
 .cart-icon:hover.cart-icon::after{
@@ -188,6 +162,47 @@ body{
     z-index: 500;
     font-size: 1.1rem;
     cursor: pointer;
+}
+
+/* colorBox */
+
+.colorBox{
+    position: fixed;
+    top: 35%;
+    left: -192.562px;
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.colors{
+    background-color: #836b47;
+    padding: 1rem;
+}
+
+.colors h4{
+    color: honeydew;
+}
+.colors span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.colorBox .boxIcon{
+    background-color: var(--secBgColor);
+    padding: .8rem .6rem;
+    cursor: pointer;
+    border-radius: 0px 3px 3px 0px;
+}
+
+.colorBox .boxIcon i{
+    color: var(--trdFontColor);
+    font-size: 1.3rem;
 }
 
 /* ========== Home ========== */
@@ -355,11 +370,26 @@ body{
 }
 
 @media screen and (max-width:767px){
+ 
+    .actv{
+        border-top: none !important;
+    }
+
     .menu-btn{
         display: flex;
+        margin-top: 1rem;
+        margin-left: auto;
+    }
+    #Home .navs .container{
+        flex-direction: column;
     }
     #Home .navs .container .navlinks{
         display: none;
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        background-color: #f5f5f5;
     }
     .navs .container .logo{
         width: 50%;
